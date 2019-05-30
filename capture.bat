@@ -12,7 +12,7 @@ ffmpeg -f gdigrab -framerate 10 -i desktop "%USERPROFILE%\Desktop\Screen-Capture
 REM nvidia's hardware acceleration
 REM ffmpeg -f gdigrab -framerate 10 -i desktop -c:v h264_nvenc -qp 0 "%USERPROFILE%\Desktop\Screen-Captures\%var%.mkv"
 
-REM converting file to save space
+REM converting file to save space. You can edit the output's format too!
 ffmpeg -i "%USERPROFILE%\Desktop\Screen-Captures\%var%.mkv" "%USERPROFILE%\Desktop\Screen-Captures\%var%-out.mkv"
 REM deleting original file
 del "%USERPROFILE%\Desktop\Screen-Captures\%var%.mkv"
