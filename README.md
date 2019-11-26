@@ -4,7 +4,7 @@ Easy FFmpeg screen capturing script for Windows. Make sure FFmpeg is in your win
 
 Stop capturing by pressing `q`.
 
-By default there's no audio capturing, you could change that by altering the commands of the script.
+Audio capturing is enabled by default but you should change your input device's name in the script. You can find its name with `ffmpeg -list_devices true -f dshow -i dummy`.
 
 More info on commands [here](https://trac.ffmpeg.org/wiki/Capture/Desktop).
 
